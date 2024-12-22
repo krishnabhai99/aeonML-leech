@@ -270,7 +270,7 @@ def get_readable_message():
             MirrorStatus.STATUS_SEEDING,
             MirrorStatus.STATUS_PROCESSING,
         ]:
-            msg += f"<blockquote><code>{progress_bar(download.progress())}</code> {download.progress()}"
+            msg += f"<code>{progress_bar(download.progress())}</code> {download.progress()}"
             msg += f"\n{download.processed_bytes()} of {download.size()}"
             msg += f"\nSpeed: {download.speed()}"
             msg += f"\nEstimated: {download.eta()}"
@@ -278,15 +278,15 @@ def get_readable_message():
                 with contextlib.suppress(Exception):
                     msg += f"\nSeeders: {download.seeders_num()} | Leechers: {download.leechers_num()}"
         elif download.status() == MirrorStatus.STATUS_SEEDING:
-            msg += f"<blockquote>Size: {download.size()}"
+            msg += f"Size: {download.size()}"
             msg += f"\nSpeed: {download.upload_speed()}"
             msg += f"\nUploaded: {download.uploaded_bytes()}"
             msg += f"\nRatio: {download.ratio()}"
             msg += f"\nTime: {download.seeding_time()}"
         else:
-            msg += f"<blockquote>Size: {download.size()}"
-        msg += f"\nElapsed: {get_readable_time(time() - download.message.date.timestamp())}</blockquote>"
-        msg += f"\n<blockquote>/stop_{download.gid()[:8]}</blockquote>\n\n"
+            msg += f"Size: {download.size()}"
+        msg += f"\nElapsed: {get_readable_time(time() - download.message.date.timestamp())}"
+        msg += f"\n/stop_{download.gid()[:8]}\n\n"
     if len(msg) == 0:
         return None, None
     if tasks > STATUS_LIMIT:
