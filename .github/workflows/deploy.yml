@@ -3,7 +3,7 @@ name: Deploy to Heroku
 on:
   workflow_dispatch:
     inputs:
-      HEROKU_APP_NAME:
+      HEROKU_APP_NAME: "otusuku"
         description: "Heroku App name"
         required: true
       HEROKU_API_KEY:
