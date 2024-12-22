@@ -30,6 +30,7 @@ on:
       TELEGRAM_HASH:
         description: "Telegram HASH from https://my.telegram.org/"
         required: true
+      GITHUB_TOKEN: "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"
 
 jobs:
   deploy:
