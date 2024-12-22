@@ -3,7 +3,7 @@ name: Deploy to Heroku
 on:
   workflow_dispatch:
     inputs:
-      HEROKU_APP_NAME: "otusuku"
+      HEROKU_APP_NAME:
         description: "Heroku App name"
         required: true
       HEROKU_API_KEY:
@@ -28,7 +28,7 @@ on:
         description: "Telegram API ID from https://my.telegram.org/"
         required: true
       TELEGRAM_HASH:
-        description: "Telegram HASH from https://my.telegram.orgk/"
+        description: "94e4f21b715fed8857cdf8d065c30cce"
         required: true
     
 
