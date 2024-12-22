@@ -109,8 +109,8 @@ STATUS_LIMIT = 4
 
 
 class MirrorStatus:
-    STATUS_UPLOADING = "🫧🅤🅟🅛🅞🅐🅓🅘🅝🅖..."
-    STATUS_DOWNLOADING = "😪🅓🅞🅦🅝🅛🅞🅐🅓🅘🅝🅖..."
+    STATUS_UPLOADING = "🔺"
+    STATUS_DOWNLOADING = "🔻"
     STATUS_CLONING = "Cloning"
     STATUS_QUEUEDL = "DL queued"
     STATUS_QUEUEUP = "UL queued"
