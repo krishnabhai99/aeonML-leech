@@ -79,9 +79,9 @@ if DATABASE_URL:
         environ["UPSTREAM_BRANCH"] = config_dict["UPSTREAM_BRANCH"]
     conn.close()
 
-UPSTREAM_REPO = environ.get("UPSTREAM_REPO", "https://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:x-oauth-basic@github.com/ALiENxBEN/aeonML")
+UPSTREAM_REPO = environ.get("UPSTREAM_REPO", "https://github.com/ALiENxBEN/aeonML")
 if len(UPSTREAM_REPO) == 0:
-    UPSTREAM_REPO = "https://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:x-oauth-basic@github.com/ALiENxBEN/aeonML"
+    UPSTREAM_REPO = "https://github.com/ALiENxBEN/aeonML"
 
 UPSTREAM_BRANCH = environ.get("UPSTREAM_BRANCH", "")
 if len(UPSTREAM_BRANCH) == 0:
