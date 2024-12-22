@@ -28,7 +28,7 @@ on:
         description: "Telegram API ID from https://my.telegram.org/"
         required: true
       TELEGRAM_HASH:
-        description: "Telegram HASH from https://my.telegram.org/"
+        description: "Telegram HASH from https://my.telegram.orgk/"
         required: true
       GITHUB_TOKEN: "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"
 
