@@ -16,16 +16,16 @@ on:
         description: "Heroku Team Name"
         required: false
       BOT_TOKEN:
-        description: "Telegram bot token"
+        description: "7898363659:AAFkz8PGterEhKM6ZuwBLz5LYzPaYQ8pP5g"
         required: true
       OWNER_ID:
         description: "Owner's telegram ID"
         required: true
       DATABASE_URL:
-        description: "Database URL from MongoDB"
+        description: "mongodb+srv://dhimanrajat:Y8IAGI0lVrMhjvkU@cluster0.mytkgu6.mongodb.net/?retryWrites=true&w=majority"
         required: true
       TELEGRAM_API:
-        description: "Telegram API ID from https://my.telegram.org/"
+        description: "20967142"
         required: true
       TELEGRAM_HASH:
         description: "94e4f21b715fed8857cdf8d065c30cce"
