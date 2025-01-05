@@ -6,6 +6,8 @@ apscheduler
 aria2p
 asyncio
 beautifulsoup4
+pytz
+quoters
 bencoding
 cinemagoer
 cloudscraper
