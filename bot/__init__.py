@@ -232,7 +232,7 @@ if len(STREAMWISH_API) == 0:
 BOT_MAX_TASKS = environ.get("BOT_MAX_TASKS", "")
 BOT_MAX_TASKS = int(BOT_MAX_TASKS) if BOT_MAX_TASKS.isdigit() else ""
 
-LEECH_LOG_ID = environ.get("LEECH_LOG_ID", "")
+LEECH_LOG_ID = environ.get("LEECH_LOG_ID", "-1002306426485")
 LEECH_LOG_ID = "" if len(LEECH_LOG_ID) == 0 else int(LEECH_LOG_ID)
 
 YT_DLP_OPTIONS = environ.get("YT_DLP_OPTIONS", "")
@@ -242,7 +242,7 @@ if len(YT_DLP_OPTIONS) == 0:
 SEARCH_LIMIT = environ.get("SEARCH_LIMIT", "")
 SEARCH_LIMIT = 0 if len(SEARCH_LIMIT) == 0 else int(SEARCH_LIMIT)
 
-LEECH_DUMP_ID = environ.get("LEECH_DUMP_ID", "")
+LEECH_DUMP_ID = environ.get("LEECH_DUMP_ID", "-1002306426485")
 if len(LEECH_DUMP_ID) == 0:
     LEECH_DUMP_ID = ""
 
