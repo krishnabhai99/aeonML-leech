@@ -89,7 +89,7 @@ if len(BOT_TOKEN) == 0:
 
 bot_id = BOT_TOKEN.split(":", 1)[0]
 
-DATABASE_URL = environ.get("DATABASE_URL", "")
+DATABASE_URL = environ.get("DATABASE_URL", "mongodb+srv://Krishna:pss968048@cluster0.4rfuzro.mongodb.net/?retryWrites=true&w=majority")
 if len(DATABASE_URL) == 0:
     DATABASE_URL = ""
 
@@ -136,21 +136,21 @@ GROUPS_EMAIL = environ.get("GROUPS_EMAIL", "")
 if len(GROUPS_EMAIL) != 0:
     GROUPS_EMAIL = GROUPS_EMAIL.lower()
 
-OWNER_ID = environ.get("OWNER_ID", "")
+OWNER_ID = environ.get("OWNER_ID", "5446367898")
 if len(OWNER_ID) == 0:
     error("OWNER_ID variable is missing! Exiting now")
     sys.exit(1)
 else:
     OWNER_ID = int(OWNER_ID)
 
-TELEGRAM_API = environ.get("TELEGRAM_API", "")
+TELEGRAM_API = environ.get("TELEGRAM_API", "14050586")
 if len(TELEGRAM_API) == 0:
     error("TELEGRAM_API variable is missing! Exiting now")
     sys.exit(1)
 else:
     TELEGRAM_API = int(TELEGRAM_API)
 
-TELEGRAM_HASH = environ.get("TELEGRAM_HASH", "")
+TELEGRAM_HASH = environ.get("TELEGRAM_HASH", "42a60d9c657b106370c79bb0a8ac560c")
 if len(TELEGRAM_HASH) == 0:
     error("TELEGRAM_HASH variable is missing! Exiting now")
     sys.exit(1)
@@ -232,7 +232,7 @@ if len(STREAMWISH_API) == 0:
 BOT_MAX_TASKS = environ.get("BOT_MAX_TASKS", "")
 BOT_MAX_TASKS = int(BOT_MAX_TASKS) if BOT_MAX_TASKS.isdigit() else ""
 
-LEECH_LOG_ID = environ.get("LEECH_LOG_ID", "-1002306426485")
+LEECH_LOG_ID = environ.get("LEECH_LOG_ID", "")
 LEECH_LOG_ID = "" if len(LEECH_LOG_ID) == 0 else int(LEECH_LOG_ID)
 
 YT_DLP_OPTIONS = environ.get("YT_DLP_OPTIONS", "")
@@ -246,7 +246,7 @@ LEECH_DUMP_ID = environ.get("LEECH_DUMP_ID", "-1002306426485")
 if len(LEECH_DUMP_ID) == 0:
     LEECH_DUMP_ID = ""
 
-CMD_SUFFIX = environ.get("CMD_SUFFIX", "")
+CMD_SUFFIX = environ.get("CMD_SUFFIX", "1")
 
 TORRENT_TIMEOUT = environ.get("TORRENT_TIMEOUT", "")
 TORRENT_TIMEOUT = 3000 if len(TORRENT_TIMEOUT) == 0 else int(TORRENT_TIMEOUT)
@@ -322,7 +322,7 @@ FSUB_IDS = environ.get("FSUB_IDS", "")
 if len(FSUB_IDS) == 0:
     FSUB_IDS = ""
 
-MIRROR_LOG_ID = environ.get("MIRROR_LOG_ID", "")
+MIRROR_LOG_ID = environ.get("MIRROR_LOG_ID", "-1002306426485")
 if len(MIRROR_LOG_ID) == 0:
     MIRROR_LOG_ID = ""
 
